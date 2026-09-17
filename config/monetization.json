@@ -1,0 +1,34 @@
+{
+  "disclosure": "本ページにはプロモーション(アフィリエイト広告)が含まれています。",
+  "programs": [
+    {
+      "id": "neo",
+      "name": "就職エージェントneo",
+      "advertiser": "株式会社ネオキャリア",
+      "asp": "A8.net",
+      "aspProgramId": "s00000018427002",
+      "status": "pending",
+      "url": "",
+      "targetAudience": "新卒(26卒・27卒)",
+      "targetRegions": ["13", "14", "12", "11", "27", "26", "28"],
+      "contexts": ["new-graduate"],
+      "cta": "新卒向けの就職エージェントに相談する(無料)",
+      "note": "提携済み。A8 でこのサイトをメディア登録しリンクを発行後、url を入れ status を active にする"
+    },
+    {
+      "id": "oshigoto-lab",
+      "name": "お仕事ラボ",
+      "advertiser": "株式会社AXIS",
+      "asp": "A8.net",
+      "aspProgramId": "s00000017390001",
+      "status": "pending",
+      "url": "",
+      "targetAudience": "薬剤師",
+      "targetRegions": [],
+      "contexts": ["pharmacist"],
+      "cta": "薬剤師専門の転職支援に相談する(無料)",
+      "note": "未提携。A8 で提携申請→承認後に url を入れ status を active にする"
+    }
+  ],
+  "paidData": { "status": "pending", "stripePaymentLinkUrl": "" }
+}
