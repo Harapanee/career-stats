@@ -10,7 +10,8 @@
     "collect": "tsx src/cli/collect.ts",
     "check": "tsx src/cli/check.ts",
     "build": "tsx src/cli/build.ts",
-    "cycle": "tsx src/cli/cycle.ts"
+    "cycle": "tsx src/cli/cycle.ts",
+    "healthcheck": "tsx src/cli/healthcheck.ts"
   },
   "license": "UNLICENSED",
   "devDependencies": {
@@ -21,5 +22,8 @@
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.70.0",
     "vitest": "^4.1.11"
+  },
+  "engines": {
+    "node": ">=22"
   }
 }

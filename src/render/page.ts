@@ -157,6 +157,8 @@ export function renderPage(site: SiteConfig, page: PageSpec): string {
     "<footer>",
     renderSources(page.sources) +
       `<nav aria-label="サイト情報">${link(site, "/about/", "このサイトについて")}${link(site, "/privacy/", "プライバシーポリシー")}${link(site, "/ads-policy/", "広告ポリシー")}</nav>`,
+    `<p class="auto-note">本サイトのページは公的統計のデータをもとに自動生成・自動更新しています(生成 AI による文章は使用していません)。</p>`,
+    `<p class="contact">ご意見・苦情・お問い合わせ: <a href="mailto:${escapeXml(site.operator.contactEmail)}">${escapeXml(site.operator.contactEmail)}</a></p>`,
     `<p>運営: ${escapeXml(site.operator.name)} / © ${escapeXml(year)} ${escapeXml(site.name)}</p>`,
     "</footer>",
     "</body>",

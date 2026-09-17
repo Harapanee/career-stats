@@ -1,0 +1,64 @@
+name: cycle
+# 収集 → 検査 → 公開 の 1 サイクル。週 1 回(火曜 12:00 JST)+ 手動。
+# GitHub の schedule は数時間遅れることがあるが、週次サイクルなので問題ない。
+on:
+  schedule:
+    - cron: "0 3 * * 2"
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+  issues: write
+concurrency:
+  group: cycle
+  cancel-in-progress: false
+jobs:
+  cycle:
+    runs-on: ubuntu-latest
+    outputs:
+      ok: ${{ steps.cycle.outcome }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: collect → build → check
+        id: cycle
+        run: npm run cycle
+      - name: commit normalized data
+        if: success()
+        run: |
+          git config user.name "career-stats-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "no data change"
+          else
+            git commit -m "data: automated collection $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi
+      - name: upload site
+        if: success()
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - name: open issue on failure
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create --title "cycle failed: $(date -u +%Y-%m-%d)" \
+            --body "収集→検査→公開サイクルが失敗しました。ゲート結果は Actions のログを参照: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
+            --label automation || true
+  deploy:
+    needs: cycle
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

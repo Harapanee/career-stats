@@ -1,0 +1,31 @@
+name: healthcheck
+# 公開 URL・出典 URL・有効なアフィリエイト URL の死活を毎日確認する。
+# CI が緑でも公開物が壊れていることはあるので、公開後の実物を見る。
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+permissions:
+  contents: read
+  issues: write
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: health check
+        id: hc
+        run: npm run healthcheck
+      - name: open issue on failure
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create --title "healthcheck failed: $(date -u +%Y-%m-%d)" \
+            --body "日次ヘルスチェックが失敗しました。ログ: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
+            --label automation || true

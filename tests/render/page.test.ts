@@ -155,3 +155,14 @@ describe("renderPage: footer sources", () => {
     expect(html).not.toContain("加工して作成");
   });
 });
+
+describe("renderPage footer compliance", () => {
+  it("shows the automation disclosure and the contact email on every page", async () => {
+    const mod = await import("../../src/render/page.js");
+    const site = { name: "S", tagline: "T", baseUrl: "https://ex.com/b", operator: { name: "harateck", contactEmail: "k@ex.com" }, locale: "ja", maxPages: 10, searchConsoleVerification: "", adsense: { publisherId: "" } };
+    const html = mod.renderPage(site, { title: "t", description: "d", path: "/", bodyHtml: "<p>x</p>", hasAffiliate: false, disclosure: "", sources: [], breadcrumbs: [{ name: "home", path: "/" }], updatedAt: "2026-09-18" });
+    expect(html).toContain("自動生成");
+    expect(html).toContain('href="mailto:k@ex.com"');
+    expect(html).toContain("苦情");
+  });
+});
