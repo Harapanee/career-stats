@@ -91,3 +91,8 @@ export function prefectureByName(name: string) {
   const n = name.replace(/\s/g, "");
   return PREFECTURES.find((p) => p.name === n || p.name.replace(/[都道府県]$/, "") === n.replace(/[都道府県]$/, ""));
 }
+
+/** 正規化ストア(data/normalized/<metric>.json をまとめたもの) */
+export interface Store {
+  datasets: Partial<Record<MetricId, Dataset>>;
+}
