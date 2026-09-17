@@ -127,7 +127,7 @@ export interface BuiltPage { path: string; html: string; lastmod: string; hasAff
 export function buildAllPages(input: BuildInput): BuiltPage[]
 ```
 ページ: `/`(全国の最新値・折れ線・上位/下位 5 県・全都道府県への導線)、`/pref/`(47 県の横棒ランキング表。キャプションに出典・時点・並べ替え基準)、`/pref/<slug>/`(折れ線・派生値の表・summarySentences・隣接順位の県へのリンク・新卒 CTA は `context: "new-graduate"` かつ対象地域のみ)、`/metrics/`、`/metrics/active-openings-ratio/`(全国の長期系列と解説)、`/about/`(編集方針: 自動生成・自動更新の開示、データの扱い、苦情・問い合わせ窓口)、`/privacy/`(Google 広告 Cookie・アクセス解析)、`/ads-policy/`(広告掲載方針: PR 表記、並び順は固定、報酬情報は非公開)、`/404.html`。すべて `renderPage` を通す。
-- [ ] テスト: ページ数が 47+7 前後で maxPages 以下 / 東京ページに `<svg` と「前月」「全国」を含む / CTA が対象地域(13)にだけ出て、非対象(01)に出ない / active が無いとき CTA も disclosure も無い / 全ページに canonical / 出典文言を含む
+- [x] テスト: ページ数が 47+7 前後で maxPages 以下 / 東京ページに `<svg` と「前月」「全国」を含む / CTA が対象地域(13)にだけ出て、非対象(01)に出ない / active が無いとき CTA も disclosure も無い / 全ページに canonical / 出典文言を含む
 - [ ] 実装 → PASS → lint
 
 ### Task 8: ゲート群(`src/gates/*.ts`)
