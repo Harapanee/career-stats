@@ -1,0 +1,25 @@
+{
+  "name": "shukatsu-stats-media",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "就職・転職の公的統計を自動収集・検査・公開する完全自動運用メディア",
+  "scripts": {
+    "test": "vitest run",
+    "lint": "eslint . && tsc --noEmit",
+    "collect": "tsx src/cli/collect.ts",
+    "check": "tsx src/cli/check.ts",
+    "build": "tsx src/cli/build.ts",
+    "cycle": "tsx src/cli/cycle.ts"
+  },
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^22.20.3",
+    "eslint": "^10.10.0",
+    "tsx": "^4.23.13",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.70.0",
+    "vitest": "^4.1.11"
+  }
+}
