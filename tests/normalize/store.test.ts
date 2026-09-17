@@ -138,3 +138,15 @@ describe("storeDigest", () => {
     expect(storeDigest(a)).not.toBe(storeDigest(c));
   });
 });
+
+describe("storeDigest ignores volatile metadata", () => {
+  it("is unchanged when only fetchedAt / rawSha256 differ", () => {
+    const base: Dataset = {
+      metric: "active_openings_ratio", unit: "倍", sourceName: "s", sourceUrl: "u", termsUrl: "t",
+      fetchedAt: "2026-09-18T00:00:00.000Z", rawSha256: "a", observations: [{ metric: "active_openings_ratio", region: "JP", period: "2026-07", value: 1.18 }],
+    };
+    const a: Store = { datasets: { active_openings_ratio: base } };
+    const b: Store = { datasets: { active_openings_ratio: { ...base, fetchedAt: "2026-09-25T00:00:00.000Z", rawSha256: "b" } } };
+    expect(storeDigest(a)).toBe(storeDigest(b));
+  });
+});

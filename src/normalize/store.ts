@@ -85,7 +85,8 @@ export function storeDigest(store: Store): string {
   const metrics = (Object.keys(store.datasets) as MetricId[]).sort();
   const canon = metrics.flatMap((m) => {
     const ds = store.datasets[m];
-    return ds ? [{ ...ds, observations: sortObservations(ds.observations) }] : [];
+    // 取得日時・生ファイルのハッシュは毎回変わるので除外し、内容(観測値)だけで比較する
+    return ds ? [{ metric: ds.metric, unit: ds.unit, observations: sortObservations(ds.observations) }] : [];
   });
   return createHash("sha256").update(JSON.stringify(canon)).digest("hex");
 }

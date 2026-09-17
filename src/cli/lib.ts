@@ -44,8 +44,9 @@ export async function loadSite(p: string): Promise<SiteConfig> {
   return JSON.parse(await readFile(p, "utf8")) as SiteConfig;
 }
 
+/** JST(UTC+9)の日付。Actions は UTC で動くので明示的にずらす */
 export function todayStr(now: () => Date = () => new Date()): string {
-  return now().toISOString().slice(0, 10);
+  return new Date(now().getTime() + 9 * 60 * 60 * 1000).toISOString().slice(0, 10);
 }
 
 /** collect: 取得 → 既存ストアにマージ → 書き込み。戻り値は変更有無。 */
