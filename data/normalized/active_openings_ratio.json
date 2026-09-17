@@ -4,8 +4,8 @@
   "sourceName": "統計ダッシュボード(総務省統計局) / 有効求人倍率(季節調整値)",
   "sourceUrl": "https://dashboard.e-stat.go.jp/api/1.0/Json/getData?IndicatorCode=0301020001000010010&Cycle=1&RegionalRank=3&TimeFrom=20150100",
   "termsUrl": "https://dashboard.e-stat.go.jp/static/terms",
-  "fetchedAt": "2026-09-17T16:20:19.244Z",
-  "rawSha256": "623ac3b20e6e49a24f085f6959f1dc2d7ec27e49b7731deda78069711598c565",
+  "fetchedAt": "2026-09-17T16:21:16.533Z",
+  "rawSha256": "07c66aa4f9e3df7ca93b35bda6027e86dcbbcc20b72a529f29a4a2b2cf18ac46",
   "observations": [
     {
       "metric": "active_openings_ratio",
