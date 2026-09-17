@@ -1,0 +1,845 @@
+{
+  "metric": "unemployment_rate",
+  "unit": "%",
+  "sourceName": "統計ダッシュボード(総務省統計局) / 完全失業率(季節調整値)",
+  "sourceUrl": "https://dashboard.e-stat.go.jp/api/1.0/Json/getData?IndicatorCode=0301010000020020010&Cycle=1&RegionalRank=2&TimeFrom=20150100",
+  "termsUrl": "https://dashboard.e-stat.go.jp/static/terms",
+  "fetchedAt": "2026-09-17T16:20:20.331Z",
+  "rawSha256": "7c27e60f17c627422d3fb5ce4fc0bafb77efad5f2111682471db1b35b6955f9d",
+  "observations": [
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2015-01",
+      "value": 3.6
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2015-02",
+      "value": 3.5
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2015-03",
+      "value": 3.4
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2015-04",
+      "value": 3.4
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2015-05",
+      "value": 3.3
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2015-06",
+      "value": 3.4
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2015-07",
+      "value": 3.3
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2015-08",
+      "value": 3.4
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2015-09",
+      "value": 3.4
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2015-10",
+      "value": 3.2
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2015-11",
+      "value": 3.3
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2015-12",
+      "value": 3.3
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2016-01",
+      "value": 3.2
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2016-02",
+      "value": 3.3
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2016-03",
+      "value": 3.2
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2016-04",
+      "value": 3.2
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2016-05",
+      "value": 3.2
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2016-06",
+      "value": 3.1
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2016-07",
+      "value": 3
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2016-08",
+      "value": 3.1
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2016-09",
+      "value": 3
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2016-10",
+      "value": 3
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2016-11",
+      "value": 3
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2016-12",
+      "value": 3
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2017-01",
+      "value": 3
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2017-02",
+      "value": 2.9
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2017-03",
+      "value": 2.8
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2017-04",
+      "value": 2.8
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2017-05",
+      "value": 3
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2017-06",
+      "value": 2.8
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2017-07",
+      "value": 2.8
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2017-08",
+      "value": 2.8
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2017-09",
+      "value": 2.8
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2017-10",
+      "value": 2.7
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2017-11",
+      "value": 2.7
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2017-12",
+      "value": 2.7
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2018-01",
+      "value": 2.4
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2018-02",
+      "value": 2.5
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2018-03",
+      "value": 2.5
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2018-04",
+      "value": 2.5
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2018-05",
+      "value": 2.2
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2018-06",
+      "value": 2.4
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2018-07",
+      "value": 2.5
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2018-08",
+      "value": 2.5
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2018-09",
+      "value": 2.3
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2018-10",
+      "value": 2.4
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2018-11",
+      "value": 2.5
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2018-12",
+      "value": 2.5
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2019-01",
+      "value": 2.5
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2019-02",
+      "value": 2.4
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2019-03",
+      "value": 2.5
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2019-04",
+      "value": 2.4
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2019-05",
+      "value": 2.3
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2019-06",
+      "value": 2.3
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2019-07",
+      "value": 2.3
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2019-08",
+      "value": 2.3
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2019-09",
+      "value": 2.4
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2019-10",
+      "value": 2.4
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2019-11",
+      "value": 2.3
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2019-12",
+      "value": 2.2
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2020-01",
+      "value": 2.4
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2020-02",
+      "value": 2.4
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2020-03",
+      "value": 2.5
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2020-04",
+      "value": 2.6
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2020-05",
+      "value": 2.8
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2020-06",
+      "value": 2.8
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2020-07",
+      "value": 2.9
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2020-08",
+      "value": 3
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2020-09",
+      "value": 3
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2020-10",
+      "value": 3.1
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2020-11",
+      "value": 3
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2020-12",
+      "value": 3.1
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2021-01",
+      "value": 3
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2021-02",
+      "value": 2.9
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2021-03",
+      "value": 2.7
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2021-04",
+      "value": 2.9
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2021-05",
+      "value": 2.9
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2021-06",
+      "value": 2.9
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2021-07",
+      "value": 2.8
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2021-08",
+      "value": 2.8
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2021-09",
+      "value": 2.7
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2021-10",
+      "value": 2.7
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2021-11",
+      "value": 2.8
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2021-12",
+      "value": 2.7
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2022-01",
+      "value": 2.8
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2022-02",
+      "value": 2.7
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2022-03",
+      "value": 2.6
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2022-04",
+      "value": 2.6
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2022-05",
+      "value": 2.6
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2022-06",
+      "value": 2.6
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2022-07",
+      "value": 2.5
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2022-08",
+      "value": 2.5
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2022-09",
+      "value": 2.6
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2022-10",
+      "value": 2.6
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2022-11",
+      "value": 2.5
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2022-12",
+      "value": 2.5
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2023-01",
+      "value": 2.5
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2023-02",
+      "value": 2.6
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2023-03",
+      "value": 2.7
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2023-04",
+      "value": 2.6
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2023-05",
+      "value": 2.5
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2023-06",
+      "value": 2.5
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2023-07",
+      "value": 2.6
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2023-08",
+      "value": 2.6
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2023-09",
+      "value": 2.6
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2023-10",
+      "value": 2.5
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2023-11",
+      "value": 2.6
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2023-12",
+      "value": 2.5
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2024-01",
+      "value": 2.5
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2024-02",
+      "value": 2.6
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2024-03",
+      "value": 2.6
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2024-04",
+      "value": 2.6
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2024-05",
+      "value": 2.6
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2024-06",
+      "value": 2.5
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2024-07",
+      "value": 2.7
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2024-08",
+      "value": 2.5
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2024-09",
+      "value": 2.4
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2024-10",
+      "value": 2.5
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2024-11",
+      "value": 2.5
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2024-12",
+      "value": 2.5
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2025-01",
+      "value": 2.5
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2025-02",
+      "value": 2.4
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2025-03",
+      "value": 2.5
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2025-04",
+      "value": 2.5
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2025-05",
+      "value": 2.5
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2025-06",
+      "value": 2.5
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2025-07",
+      "value": 2.4
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2025-08",
+      "value": 2.6
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2025-09",
+      "value": 2.6
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2025-10",
+      "value": 2.6
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2025-11",
+      "value": 2.6
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2025-12",
+      "value": 2.6
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2026-01",
+      "value": 2.7
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2026-02",
+      "value": 2.6
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2026-03",
+      "value": 2.7
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2026-04",
+      "value": 2.5
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2026-05",
+      "value": 2.5
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2026-06",
+      "value": 2.5
+    },
+    {
+      "metric": "unemployment_rate",
+      "region": "JP",
+      "period": "2026-07",
+      "value": 2.4
+    }
+  ]
+}
