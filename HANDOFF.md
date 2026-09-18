@@ -25,7 +25,7 @@
 | 7 | (任意・保険)都道府県労働局 需給調整事業課へ「統計+エージェント広告のみのサイトは募集情報等提供事業に該当しないか」を 1 回照会 | 結果を `docs/legal-review.md` §1 に追記 | 法令 |
 | 8 | (任意)設計書 `docs/superpowers/specs/…design.md` のレビュー。自動運用を止めずに読める | 修正があれば Phase 2 計画に反映 | — |
 | 9 | (任意)e-Stat API の appId 登録 | 職業別・産業別データの拡張(Phase 2)に使う | コンテンツ拡張 |
-| 10 | (任意)Cloudflare 認証 | Pages/独自ドメイン運用を Cloudflare に移す場合のみ | — |
+| 10 | (任意)Cloudflare の API トークン(Pages/Workers デプロイ・DNS 権限)または wrangler ログイン。claude.ai の Cloudflare コネクタ自体は接続済みだが、デプロイ・DNS のツールを持たない | 独自ドメインの DNS を Cloudflare で管理する場合と、配信を Cloudflare Pages に移す場合に使う | — |
 
 ## 撤退基準の数値(設計書 §8)
 - 公開後 **6 か月**(2027-03-18)時点で Search Console の月間クリックが **300 未満**、かつ **9 か月**(2027-06-18)で **1,000 未満** → コンテンツ投資を止め、データ更新だけの維持モードへ。
@@ -51,6 +51,7 @@
 | R5 サイト売却 | 出口基準のみ定義 | 12 か月後に判定 |
 
 ## 踏んだ罠・知見
+- Cloudflare: セッション開始時の「cloudflare は認証が必要」は別項目(ユーザー設定の MCP)で、claude.ai コネクタ(bindings.mcp.cloudflare.com)は接続済み。ただしデプロイ・DNS のツールは無く wrangler も未ログインなので、公開経路としては使えない。通知だけで判断せず実際に 1 回呼んで確かめること。
 - GitHub Actions の `schedule` は数時間遅延しうる(既存 *-delivery の記録)。週次なので許容。
 - 統計ダッシュボード API は登録不要だが、完全失業率に都道府県別は無い(status "1" が返り `STATISTICAL_DATA` ごと欠落)。指標ごとに `prefectural` フラグで扱いを分けている。
 - e-Stat のファイルダウンロードは CSV 未提供(Excel/PDF のみ)。月次 statInfId の据え置き有無は未確認 → Phase 2 で一覧ページのパースが必要。

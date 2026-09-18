@@ -61,7 +61,7 @@
 | 案 | 人待ちなしで今すぐ動くか | 定期実行 | 費用 | 備考 | 判定 |
 |---|---|---|---|---|---|
 | **C1 GitHub Pages + GitHub Actions(cron)** | ◎ gh CLI が `repo` `workflow` スコープで認証済み。リポジトリ作成・Pages 有効化・cron 登録まで API で完結 | Actions の `schedule` | 無料(公開リポジトリ) | 実行ログが Actions に残り、失敗時は GitHub がメール通知(=「通知を読むかどうか」だけ)。既存の *-delivery リポジトリと同じ運用パターン | **採用** |
-| C2 Cloudflare Pages/Workers + Cron Triggers | × Cloudflare 認証が未提供(MCP 未認証、wrangler 未ログイン) | Cron Triggers | 無料枠 | エッジ配信・独自ドメイン運用に強い。認証提供後の移行先候補 | 人待ち(移行候補) |
+| C2 Cloudflare Pages/Workers + Cron Triggers | × claude.ai の Cloudflare コネクタは接続済み(D1/KV/R2/Workers 一覧・コード取得)だが、Pages/Workers へのデプロイと DNS 設定のツールが無い。wrangler は未インストール・未ログインで、API トークン提供が必要 | Cron Triggers | 無料枠 | エッジ配信・独自ドメイン運用に強い。トークン提供後の移行先候補 | 人待ち(移行候補) |
 | C3 ローカル Mac の launchd + どこかへ rsync | × Mac が起動している時しか動かず、完全自動と言えない | launchd | 無料 | — | 不採用 |
 | C4 Vercel / Netlify | × アカウント認証が未提供 | 各社の cron | 無料枠 | — | 不採用 |
 
