@@ -1,0 +1,28 @@
+name: cf-verify
+# Cloudflare API トークンの有効性と権限を検証する(手動実行のみ)。トークン値は出力しない。
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    env:
+      CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CF_ACCOUNT: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - name: token verify
+        run: |
+          curl -sf -H "Authorization: Bearer $CF_TOKEN" https://api.cloudflare.com/client/v4/user/tokens/verify \
+            | jq '{status: .result.status, expires_on: .result.expires_on, success: .success}'
+      - name: account id format
+        run: |
+          if [ "${#CF_ACCOUNT}" -eq 32 ]; then echo "account id: 32 chars OK"; else echo "account id length=${#CF_ACCOUNT} (expected 32)"; fi
+      - name: pages projects (Account:Cloudflare Pages)
+        run: |
+          curl -s -H "Authorization: Bearer $CF_TOKEN" "https://api.cloudflare.com/client/v4/accounts/$CF_ACCOUNT/pages/projects" \
+            | jq '{success: .success, errors: [.errors[]?.message], projects: [.result[]?.name]}'
+      - name: zones (Zone:Zone Read)
+        run: |
+          curl -s -H "Authorization: Bearer $CF_TOKEN" "https://api.cloudflare.com/client/v4/zones?per_page=50" \
+            | jq '{success: .success, errors: [.errors[]?.message], zones: [.result[]? | {name, status}]}'
