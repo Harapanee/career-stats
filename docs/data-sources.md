@@ -29,8 +29,9 @@
 
 ## 採用(公開・配信・収益)
 
-### S1 GitHub Pages / GitHub Actions
-- [GitHub Pages 利用規約](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#prohibited-uses): 商用は「限定的」に許容(オンラインビジネスや SaaS の運用は不可、静的サイトの広告掲載は一般的に許容)。帯域 100GB/月、サイト 1GB、ビルド 10 回/時 のソフト制限。本サイトは静的で月次更新のため範囲内。独自ドメイン取得後も同じ。
+### S1 Cloudflare Pages(配信)/ GitHub Actions(ビルド・スケジュール)
+- Cloudflare Pages: [制限](https://developers.cloudflare.com/pages/platform/limits/)(無料枠: 直接アップロードはビルド回数に数えない、1 デプロイ 20,000 ファイル・1 ファイル 25MB)。[利用規約](https://www.cloudflare.com/website-terms/)・[Supplemental Terms](https://www.cloudflare.com/supplemental-terms/) に静的サイトの商用利用を禁じる条項なし。本サイトは 60 ファイル・約 1.2MB。
+- GitHub Actions: 公開リポジトリは無料枠。ビルド・ゲート・cron に使う(配信には使わない)。旧 GitHub Pages(商用利用に制限)は 2026-09-18 に停止。
 - robots.txt: 本サイト自身が `robots.txt` を配信する(全許可 + sitemap)。
 
 ### S2 A8.net(アフィリエイト)

@@ -60,8 +60,8 @@
 
 | 案 | 人待ちなしで今すぐ動くか | 定期実行 | 費用 | 備考 | 判定 |
 |---|---|---|---|---|---|
-| **C1 GitHub Pages + GitHub Actions(cron)** | ◎ gh CLI が `repo` `workflow` スコープで認証済み。リポジトリ作成・Pages 有効化・cron 登録まで API で完結 | Actions の `schedule` | 無料(公開リポジトリ) | 実行ログが Actions に残り、失敗時は GitHub がメール通知(=「通知を読むかどうか」だけ)。既存の *-delivery リポジトリと同じ運用パターン | **採用** |
-| C2 Cloudflare Pages/Workers + Cron Triggers | × claude.ai の Cloudflare コネクタは接続済み(D1/KV/R2/Workers 一覧・コード取得)だが、Pages/Workers へのデプロイと DNS 設定のツールが無い。wrangler は未インストール・未ログインで、API トークン提供が必要 | Cron Triggers | 無料枠 | エッジ配信・独自ドメイン運用に強い。トークン提供後の移行先候補 | 人待ち(移行候補) |
+| C1 GitHub Pages + GitHub Actions(cron) | ◎ gh CLI が `repo` `workflow` スコープで認証済み。リポジトリ作成・Pages 有効化・cron 登録まで API で完結 | Actions の `schedule` | 無料(公開リポジトリ) | 実行ログが Actions に残り、失敗時は GitHub がメール通知。GitHub Pages は商用利用に制限がある(広告収入サイトはグレー) | 初期採用 → 同日に C2 へ移行 |
+| **C2 Cloudflare Pages(配信)+ GitHub Actions(cron・ビルド)** | ○ API トークン(Pages Edit / DNS Edit / Zone Read)が 2026-09-18 に提供され、Pages プロジェクト・カスタムドメイン・DNS を Actions から冪等に作成できた。claude.ai のコネクタ単体ではデプロイ・DNS ができない | Actions の `schedule`(ビルドとゲートは GitHub 側のまま) | 無料枠(直接アップロードはビルド回数に数えない) | 商用利用の制限なし、自社ドメイン harateck.com が Cloudflare 管理下にあるため career.harateck.com を DNS だけで割当可能(新規ドメイン購入の人待ちが消えた) | **採用(2026-09-18 移行)** |
 | C3 ローカル Mac の launchd + どこかへ rsync | × Mac が起動している時しか動かず、完全自動と言えない | launchd | 無料 | — | 不採用 |
 | C4 Vercel / Netlify | × アカウント認証が未提供 | 各社の cron | 無料枠 | — | 不採用 |
 
