@@ -1,7 +1,7 @@
 {
   "name": "就活・転職データラボ",
   "tagline": "公的統計でみる就職・転職の今",
-  "baseUrl": "https://harapanee.github.io/career-stats",
+  "baseUrl": "https://career.harateck.com",
   "operator": {
     "name": "harateck",
     "contactEmail": "k.hara@harateck.com"
@@ -9,5 +9,7 @@
   "locale": "ja",
   "maxPages": 300,
   "searchConsoleVerification": "",
-  "adsense": { "publisherId": "" }
+  "adsense": {
+    "publisherId": ""
+  }
 }

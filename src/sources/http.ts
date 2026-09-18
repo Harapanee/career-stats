@@ -26,7 +26,7 @@ export interface HttpOpts {
 }
 
 export const DEFAULT_USER_AGENT =
-  "career-stats-bot/1.0 (+https://harapanee.github.io/career-stats; k.hara@harateck.com)";
+  "career-stats-bot/1.0 (+https://career.harateck.com; k.hara@harateck.com)";
 
 const RETRY_WAIT_MS = 500;
 const DEFAULT_TIMEOUT_MS = 30_000;

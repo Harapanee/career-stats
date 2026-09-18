@@ -7,8 +7,6 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
-  pages: write
-  id-token: write
   issues: write
 concurrency:
   group: cycle
@@ -16,8 +14,6 @@ concurrency:
 jobs:
   cycle:
     runs-on: ubuntu-latest
-    outputs:
-      ok: ${{ steps.cycle.outcome }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -40,11 +36,13 @@ jobs:
             git commit -m "data: automated collection $(date -u +%Y-%m-%dT%H:%MZ)"
             git push
           fi
-      - name: upload site
+      - name: deploy to Cloudflare Pages
         if: success()
-        uses: actions/upload-pages-artifact@v3
+        uses: cloudflare/wrangler-action@v3
         with:
-          path: site
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy site --project-name=career-stats --branch=main --commit-dirty=true
       - name: open issue on failure
         if: failure()
         env:
@@ -53,12 +51,3 @@ jobs:
           gh issue create --title "cycle failed: $(date -u +%Y-%m-%d)" \
             --body "収集→検査→公開サイクルが失敗しました。ゲート結果は Actions のログを参照: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
             --label automation || true
-  deploy:
-    needs: cycle
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
