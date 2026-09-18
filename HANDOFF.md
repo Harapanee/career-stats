@@ -1,6 +1,6 @@
 # HANDOFF — 就活・転職データラボ(就職・転職 統計メディア、完全自動運用)
 
-最終更新: 2026-09-18 10:20 JST(配信を Cloudflare Pages + career.harateck.com に移行済み)
+最終更新: 2026-09-18 10:30 JST(CLAUDE.md を追加。配信は Cloudflare Pages + career.harateck.com)
 セッション再開時はまずこのファイル → `docs/superpowers/specs/2026-09-18-career-stats-media-design.md` の順に読む。
 
 ## 期限のあるもの(先頭に置く)
