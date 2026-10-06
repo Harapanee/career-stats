@@ -4,8 +4,8 @@
   "sourceName": "統計ダッシュボード(総務省統計局) / 新規求人倍率(季節調整値)",
   "sourceUrl": "https://dashboard.e-stat.go.jp/api/1.0/Json/getData?IndicatorCode=0301020002000010010&Cycle=1&RegionalRank=3&TimeFrom=20150100",
   "termsUrl": "https://dashboard.e-stat.go.jp/static/terms",
-  "fetchedAt": "2026-09-29T09:34:12.597Z",
-  "rawSha256": "b4ae87c184fc8f76be980ec5c0d5a467b8342f84fc6b63dfe2fc90d28b678b7c",
+  "fetchedAt": "2026-10-06T09:52:31.558Z",
+  "rawSha256": "f7f9e63afc4b3772a9d8a8a000ab2ab6b99f0e206e6aa66cca010c07d519413d",
   "observations": [
     {
       "metric": "new_openings_ratio",
@@ -843,6 +843,12 @@
     },
     {
       "metric": "new_openings_ratio",
+      "region": "01",
+      "period": "2026-08",
+      "value": 1.45
+    },
+    {
+      "metric": "new_openings_ratio",
       "region": "02",
       "period": "2015-01",
       "value": 1.11
@@ -1677,6 +1683,12 @@
     },
     {
       "metric": "new_openings_ratio",
+      "region": "02",
+      "period": "2026-08",
+      "value": 1.75
+    },
+    {
+      "metric": "new_openings_ratio",
       "region": "03",
       "period": "2015-01",
       "value": 1.57
@@ -2508,6 +2520,12 @@
       "region": "03",
       "period": "2026-07",
       "value": 1.86
+    },
+    {
+      "metric": "new_openings_ratio",
+      "region": "03",
+      "period": "2026-08",
+      "value": 1.83
     },
     {
       "metric": "new_openings_ratio",
@@ -3345,6 +3363,12 @@
     },
     {
       "metric": "new_openings_ratio",
+      "region": "04",
+      "period": "2026-08",
+      "value": 1.93
+    },
+    {
+      "metric": "new_openings_ratio",
       "region": "05",
       "period": "2015-01",
       "value": 1.48
@@ -4176,6 +4200,12 @@
       "region": "05",
       "period": "2026-07",
       "value": 1.82
+    },
+    {
+      "metric": "new_openings_ratio",
+      "region": "05",
+      "period": "2026-08",
+      "value": 1.74
     },
     {
       "metric": "new_openings_ratio",
@@ -5013,6 +5043,12 @@
     },
     {
       "metric": "new_openings_ratio",
+      "region": "06",
+      "period": "2026-08",
+      "value": 1.97
+    },
+    {
+      "metric": "new_openings_ratio",
       "region": "07",
       "period": "2015-01",
       "value": 1.94
@@ -5843,6 +5879,12 @@
       "metric": "new_openings_ratio",
       "region": "07",
       "period": "2026-07",
+      "value": 1.98
+    },
+    {
+      "metric": "new_openings_ratio",
+      "region": "07",
+      "period": "2026-08",
       "value": 1.98
     },
     {
@@ -6681,6 +6723,12 @@
     },
     {
       "metric": "new_openings_ratio",
+      "region": "08",
+      "period": "2026-08",
+      "value": 1.97
+    },
+    {
+      "metric": "new_openings_ratio",
       "region": "09",
       "period": "2015-01",
       "value": 1.43
@@ -7512,6 +7560,12 @@
       "region": "09",
       "period": "2026-07",
       "value": 2.1
+    },
+    {
+      "metric": "new_openings_ratio",
+      "region": "09",
+      "period": "2026-08",
+      "value": 1.96
     },
     {
       "metric": "new_openings_ratio",
@@ -8349,6 +8403,12 @@
     },
     {
       "metric": "new_openings_ratio",
+      "region": "10",
+      "period": "2026-08",
+      "value": 1.93
+    },
+    {
+      "metric": "new_openings_ratio",
       "region": "11",
       "period": "2015-01",
       "value": 1.28
@@ -9183,6 +9243,12 @@
     },
     {
       "metric": "new_openings_ratio",
+      "region": "11",
+      "period": "2026-08",
+      "value": 1.7
+    },
+    {
+      "metric": "new_openings_ratio",
       "region": "12",
       "period": "2015-01",
       "value": 1.58
@@ -10014,6 +10080,12 @@
       "region": "12",
       "period": "2026-07",
       "value": 1.7
+    },
+    {
+      "metric": "new_openings_ratio",
+      "region": "12",
+      "period": "2026-08",
+      "value": 1.67
     },
     {
       "metric": "new_openings_ratio",
@@ -10851,6 +10923,12 @@
     },
     {
       "metric": "new_openings_ratio",
+      "region": "13",
+      "period": "2026-08",
+      "value": 3.36
+    },
+    {
+      "metric": "new_openings_ratio",
       "region": "14",
       "period": "2015-01",
       "value": 1.39
@@ -11682,6 +11760,12 @@
       "region": "14",
       "period": "2026-07",
       "value": 1.57
+    },
+    {
+      "metric": "new_openings_ratio",
+      "region": "14",
+      "period": "2026-08",
+      "value": 1.44
     },
     {
       "metric": "new_openings_ratio",
@@ -12519,6 +12603,12 @@
     },
     {
       "metric": "new_openings_ratio",
+      "region": "15",
+      "period": "2026-08",
+      "value": 2.02
+    },
+    {
+      "metric": "new_openings_ratio",
       "region": "16",
       "period": "2015-01",
       "value": 2.04
@@ -13350,6 +13440,12 @@
       "region": "16",
       "period": "2026-07",
       "value": 2.36
+    },
+    {
+      "metric": "new_openings_ratio",
+      "region": "16",
+      "period": "2026-08",
+      "value": 2.29
     },
     {
       "metric": "new_openings_ratio",
@@ -14187,6 +14283,12 @@
     },
     {
       "metric": "new_openings_ratio",
+      "region": "17",
+      "period": "2026-08",
+      "value": 2.42
+    },
+    {
+      "metric": "new_openings_ratio",
       "region": "18",
       "period": "2015-01",
       "value": 2.12
@@ -15018,6 +15120,12 @@
       "region": "18",
       "period": "2026-07",
       "value": 2.07
+    },
+    {
+      "metric": "new_openings_ratio",
+      "region": "18",
+      "period": "2026-08",
+      "value": 2.46
     },
     {
       "metric": "new_openings_ratio",
@@ -15855,6 +15963,12 @@
     },
     {
       "metric": "new_openings_ratio",
+      "region": "19",
+      "period": "2026-08",
+      "value": 2.44
+    },
+    {
+      "metric": "new_openings_ratio",
       "region": "20",
       "period": "2015-01",
       "value": 1.94
@@ -16686,6 +16800,12 @@
       "region": "20",
       "period": "2026-07",
       "value": 2.26
+    },
+    {
+      "metric": "new_openings_ratio",
+      "region": "20",
+      "period": "2026-08",
+      "value": 2.28
     },
     {
       "metric": "new_openings_ratio",
@@ -17523,6 +17643,12 @@
     },
     {
       "metric": "new_openings_ratio",
+      "region": "21",
+      "period": "2026-08",
+      "value": 2.51
+    },
+    {
+      "metric": "new_openings_ratio",
       "region": "22",
       "period": "2015-01",
       "value": 1.76
@@ -18354,6 +18480,12 @@
       "region": "22",
       "period": "2026-07",
       "value": 1.96
+    },
+    {
+      "metric": "new_openings_ratio",
+      "region": "22",
+      "period": "2026-08",
+      "value": 1.82
     },
     {
       "metric": "new_openings_ratio",
@@ -19191,6 +19323,12 @@
     },
     {
       "metric": "new_openings_ratio",
+      "region": "23",
+      "period": "2026-08",
+      "value": 2.19
+    },
+    {
+      "metric": "new_openings_ratio",
       "region": "24",
       "period": "2015-01",
       "value": 1.84
@@ -20022,6 +20160,12 @@
       "region": "24",
       "period": "2026-07",
       "value": 2.03
+    },
+    {
+      "metric": "new_openings_ratio",
+      "region": "24",
+      "period": "2026-08",
+      "value": 2.11
     },
     {
       "metric": "new_openings_ratio",
@@ -20859,6 +21003,12 @@
     },
     {
       "metric": "new_openings_ratio",
+      "region": "25",
+      "period": "2026-08",
+      "value": 1.58
+    },
+    {
+      "metric": "new_openings_ratio",
       "region": "26",
       "period": "2015-01",
       "value": 1.75
@@ -21690,6 +21840,12 @@
       "region": "26",
       "period": "2026-07",
       "value": 2.4
+    },
+    {
+      "metric": "new_openings_ratio",
+      "region": "26",
+      "period": "2026-08",
+      "value": 2.37
     },
     {
       "metric": "new_openings_ratio",
@@ -22527,6 +22683,12 @@
     },
     {
       "metric": "new_openings_ratio",
+      "region": "27",
+      "period": "2026-08",
+      "value": 2.04
+    },
+    {
+      "metric": "new_openings_ratio",
       "region": "28",
       "period": "2015-01",
       "value": 1.47
@@ -23358,6 +23520,12 @@
       "region": "28",
       "period": "2026-07",
       "value": 1.65
+    },
+    {
+      "metric": "new_openings_ratio",
+      "region": "28",
+      "period": "2026-08",
+      "value": 1.66
     },
     {
       "metric": "new_openings_ratio",
@@ -24195,6 +24363,12 @@
     },
     {
       "metric": "new_openings_ratio",
+      "region": "29",
+      "period": "2026-08",
+      "value": 2.05
+    },
+    {
+      "metric": "new_openings_ratio",
       "region": "30",
       "period": "2015-01",
       "value": 1.61
@@ -25026,6 +25200,12 @@
       "region": "30",
       "period": "2026-07",
       "value": 1.67
+    },
+    {
+      "metric": "new_openings_ratio",
+      "region": "30",
+      "period": "2026-08",
+      "value": 1.8
     },
     {
       "metric": "new_openings_ratio",
@@ -25863,6 +26043,12 @@
     },
     {
       "metric": "new_openings_ratio",
+      "region": "31",
+      "period": "2026-08",
+      "value": 2.17
+    },
+    {
+      "metric": "new_openings_ratio",
       "region": "32",
       "period": "2015-01",
       "value": 1.72
@@ -26694,6 +26880,12 @@
       "region": "32",
       "period": "2026-07",
       "value": 2.67
+    },
+    {
+      "metric": "new_openings_ratio",
+      "region": "32",
+      "period": "2026-08",
+      "value": 2.19
     },
     {
       "metric": "new_openings_ratio",
@@ -27531,6 +27723,12 @@
     },
     {
       "metric": "new_openings_ratio",
+      "region": "33",
+      "period": "2026-08",
+      "value": 2.22
+    },
+    {
+      "metric": "new_openings_ratio",
       "region": "34",
       "period": "2015-01",
       "value": 2.49
@@ -28362,6 +28560,12 @@
       "region": "34",
       "period": "2026-07",
       "value": 2.43
+    },
+    {
+      "metric": "new_openings_ratio",
+      "region": "34",
+      "period": "2026-08",
+      "value": 2.16
     },
     {
       "metric": "new_openings_ratio",
@@ -29199,6 +29403,12 @@
     },
     {
       "metric": "new_openings_ratio",
+      "region": "35",
+      "period": "2026-08",
+      "value": 1.92
+    },
+    {
+      "metric": "new_openings_ratio",
       "region": "36",
       "period": "2015-01",
       "value": 1.83
@@ -30030,6 +30240,12 @@
       "region": "36",
       "period": "2026-07",
       "value": 2.22
+    },
+    {
+      "metric": "new_openings_ratio",
+      "region": "36",
+      "period": "2026-08",
+      "value": 2.31
     },
     {
       "metric": "new_openings_ratio",
@@ -30867,6 +31083,12 @@
     },
     {
       "metric": "new_openings_ratio",
+      "region": "37",
+      "period": "2026-08",
+      "value": 2.2
+    },
+    {
+      "metric": "new_openings_ratio",
       "region": "38",
       "period": "2015-01",
       "value": 1.64
@@ -31698,6 +31920,12 @@
       "region": "38",
       "period": "2026-07",
       "value": 2.44
+    },
+    {
+      "metric": "new_openings_ratio",
+      "region": "38",
+      "period": "2026-08",
+      "value": 2.4
     },
     {
       "metric": "new_openings_ratio",
@@ -32535,6 +32763,12 @@
     },
     {
       "metric": "new_openings_ratio",
+      "region": "39",
+      "period": "2026-08",
+      "value": 1.87
+    },
+    {
+      "metric": "new_openings_ratio",
       "region": "40",
       "period": "2015-01",
       "value": 1.57
@@ -33366,6 +33600,12 @@
       "region": "40",
       "period": "2026-07",
       "value": 2.01
+    },
+    {
+      "metric": "new_openings_ratio",
+      "region": "40",
+      "period": "2026-08",
+      "value": 1.94
     },
     {
       "metric": "new_openings_ratio",
@@ -34203,6 +34443,12 @@
     },
     {
       "metric": "new_openings_ratio",
+      "region": "41",
+      "period": "2026-08",
+      "value": 1.95
+    },
+    {
+      "metric": "new_openings_ratio",
       "region": "42",
       "period": "2015-01",
       "value": 1.33
@@ -35034,6 +35280,12 @@
       "region": "42",
       "period": "2026-07",
       "value": 1.58
+    },
+    {
+      "metric": "new_openings_ratio",
+      "region": "42",
+      "period": "2026-08",
+      "value": 1.61
     },
     {
       "metric": "new_openings_ratio",
@@ -35871,6 +36123,12 @@
     },
     {
       "metric": "new_openings_ratio",
+      "region": "43",
+      "period": "2026-08",
+      "value": 2.07
+    },
+    {
+      "metric": "new_openings_ratio",
       "region": "44",
       "period": "2015-01",
       "value": 1.53
@@ -36705,6 +36963,12 @@
     },
     {
       "metric": "new_openings_ratio",
+      "region": "44",
+      "period": "2026-08",
+      "value": 1.71
+    },
+    {
+      "metric": "new_openings_ratio",
       "region": "45",
       "period": "2015-01",
       "value": 1.48
@@ -37536,6 +37800,12 @@
       "region": "45",
       "period": "2026-07",
       "value": 1.84
+    },
+    {
+      "metric": "new_openings_ratio",
+      "region": "45",
+      "period": "2026-08",
+      "value": 1.92
     },
     {
       "metric": "new_openings_ratio",
@@ -38373,6 +38643,12 @@
     },
     {
       "metric": "new_openings_ratio",
+      "region": "46",
+      "period": "2026-08",
+      "value": 1.82
+    },
+    {
+      "metric": "new_openings_ratio",
       "region": "47",
       "period": "2015-01",
       "value": 1.21
@@ -39207,6 +39483,12 @@
     },
     {
       "metric": "new_openings_ratio",
+      "region": "47",
+      "period": "2026-08",
+      "value": 1.59
+    },
+    {
+      "metric": "new_openings_ratio",
       "region": "JP",
       "period": "2015-01",
       "value": 1.77
@@ -40038,6 +40320,12 @@
       "region": "JP",
       "period": "2026-07",
       "value": 2.1
+    },
+    {
+      "metric": "new_openings_ratio",
+      "region": "JP",
+      "period": "2026-08",
+      "value": 2.06
     }
   ]
 }
