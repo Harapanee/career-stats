@@ -4,8 +4,8 @@
   "sourceName": "統計ダッシュボード(総務省統計局) / 新規求人倍率(季節調整値)",
   "sourceUrl": "https://dashboard.e-stat.go.jp/api/1.0/Json/getData?IndicatorCode=0301020002000010010&Cycle=1&RegionalRank=3&TimeFrom=20150100",
   "termsUrl": "https://dashboard.e-stat.go.jp/static/terms",
-  "fetchedAt": "2026-10-13T10:16:32.507Z",
-  "rawSha256": "5e87e0e2c0c538e3752c58f3be36d66af8ad9a6a145364362cfa9b0cbb198633",
+  "fetchedAt": "2026-10-20T08:17:34.020Z",
+  "rawSha256": "3257d19b95c87cb5c5a550fcebf5544e73ca2913924314b46591c080ec937455",
   "observations": [
     {
       "metric": "new_openings_ratio",

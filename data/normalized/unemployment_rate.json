@@ -4,8 +4,8 @@
   "sourceName": "統計ダッシュボード(総務省統計局) / 完全失業率(季節調整値)",
   "sourceUrl": "https://dashboard.e-stat.go.jp/api/1.0/Json/getData?IndicatorCode=0301010000020020010&Cycle=1&RegionalRank=2&TimeFrom=20150100",
   "termsUrl": "https://dashboard.e-stat.go.jp/static/terms",
-  "fetchedAt": "2026-10-13T10:16:32.715Z",
-  "rawSha256": "761ec4339bcd6977322adbcca182ca828892e018e03368e187a870a204f05402",
+  "fetchedAt": "2026-10-20T08:17:34.334Z",
+  "rawSha256": "7ef22011c7d20268fbb747b5524e52334c31781d1f8336922a6fd45d8cba2982",
   "observations": [
     {
       "metric": "unemployment_rate",
